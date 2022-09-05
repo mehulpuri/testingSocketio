@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>5 in a row</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <div class="controls-wrapper">
+            <ul id="events"></ul>
+            <div class="controls">
+                <div class="chat-wrapper">
+                    <form id="chat-form">
+                        <input id="chat" autocomplete="off" title="chat"></input>
+                        <button type="submit" id="say">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+   <script src="/socket.io/socket.io.js"></script> 
+   <!-- the socket io module in server.js intercepts the request for socket io script and serves it to the client that way we dont need a dedicated js script -->
+   <script src="src/client.js"></script>
+    </body>
+</html>
